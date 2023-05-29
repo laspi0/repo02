@@ -22,7 +22,6 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <!-- Responsive Style -->
   <link rel="stylesheet" href="assets/css/responsive.css">
-
 </head>
 
 <body>
@@ -517,20 +516,20 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <input type="text" class="form-control" id="name" name="name" placeholder="Name" required
-                      data-error="Please enter your name">
+                      data-error="Enrter votre nom">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <input type="text" placeholder="Email" id="email" class="form-control" name="email" required
-                      data-error="Please enter your email">
+                      data-error="Entrer votre email">
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
-                    <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required
+                    <input type="text" placeholder="sujet" id="msg_subject" class="form-control" required
                       data-error="Please enter your subject">
                     <div class="help-block with-errors"></div>
                   </div>
@@ -542,7 +541,8 @@
                     <div class="help-block with-errors"></div>
                   </div>
                   <div class="submit-button text-left">
-                    <button class="btn btn-common" id="form-submit" type="submit">Send Message</button>
+                    <button class="btn btn-common" id="form-submit" type="submit">Send
+                      Message</button>
                     <div id="msgSubmit" class="h3 text-center hidden"></div>
                     <div class="clearfix"></div>
                   </div>
@@ -617,7 +617,8 @@
                 <a href="tel:76-021-43-97"><i class="lni-phone-handset"></i>+221 76 021 43 97</a>
               </li>
               <li>
-               <a href="https://api.whatsapp.com/send?phone=+221778574387"><img width="40px" src="./assets/img/whatsapp.svg" alt="">  Contact WhatsApp</a>
+                <a href="https://api.whatsapp.com/send?phone=+221778574387"><img width="40px"
+                    src="./assets/img/whatsapp.svg" alt=""> Contact WhatsApp</a>
               </li>
               <li>
                 <a href="#"><i class="lni-envelope"></i> E: contact@uideck.com</a>
@@ -653,6 +654,7 @@
   <!-- End Preloader -->
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
   <script src="assets/js/jquery-min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
@@ -664,6 +666,17 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/form-validator.min.js"></script>
   <script src="assets/js/contact-form-script.min.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("1lu6yhnVRFaW9cuQx");
+   })();
+</script>
+<!-- <script src="./assets/js/form.js"></script> -->
+
+
 
 </body>
 
